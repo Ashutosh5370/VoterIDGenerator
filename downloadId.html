@@ -1,0 +1,73 @@
+
+<?php  include('processing.php'); ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voter Register</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="register.css">
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "voter";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("<h1>Connection failed: <h1>" . $conn->connect_error);
+} 
+
+?>
+
+
+
+<form  >
+  <label>
+    <p class="label-txt">Enter your Unique Serial Number</p>
+    <br>
+    <input type="text" class="form-control">
+   
+  </label>
+  
+  <h3>OR</h3>
+
+  <label>
+    <p class="label-txt">Enter your Name</p>
+    <input type="text" class="form-control">
+  </label>
+  
+<label>
+    <p class="label-txt">Enter your Area</p>
+    <input type="text" class="form-control">
+  </label>
+  
+
+
+
+
+
+  <button class="btn btn-primary" type="submit">Search </button>
+</form>
+
+
+
+</body>
+</html>
+

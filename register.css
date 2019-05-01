@@ -1,0 +1,35 @@
+
+
+body {
+  background:#42f4c5;
+}
+
+
+label {
+  display: block;
+  position: relative;
+  margin: 55px 0px;
+}
+
+.label-txt {
+  position: absolute;
+  top: -1.6em;
+  font-family: 'Merriweather', serif;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  transition: ease .3s;
+}
+
+
+form {
+  width: 50%;
+  margin: 70px auto;
+  background: #efefef;
+  padding: 50px 120px 70px 120px;
+  text-align: center;
+}
+
+h3{
+
+	background-image: "vote.jpg";
+}
